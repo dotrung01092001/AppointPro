@@ -17,11 +17,11 @@ export const ROUTE_PATHS = {
 
   SERVICES: "/services",
 
-  USER: "/user",
+  USERS: "/users",
 
   NOTIFICATIONS: "/notifications",
 
-  BUSINESS_SETTINGS: "/business-settings",
+  SETTINGS: "/settings",
 
   PROFILE: "/profile",
 

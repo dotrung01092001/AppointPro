@@ -8,5 +8,5 @@ export const appConfig = {
   dateFormat: "MM/DD/YYYY",
   timeFormat: "hh:mm",
   dateTimeFormat: "MM/DD/YYYY hh:mm",
-  sizebarWidth: 300,
+  sidebarWidth: 220,
 };
