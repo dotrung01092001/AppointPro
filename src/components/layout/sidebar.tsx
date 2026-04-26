@@ -26,7 +26,7 @@ export default function Sidebar() {
     }
 
     return (
-        <div className='flex flex-col ml-4 my-4 bg-white rounded-l-xl shadow-lg border border-gray-200'>
+        <div className='flex flex-col bg-white rounded-l-xl shadow-lg border border-gray-200'>
             <div className='flex items-center gap-2 p-4 border-b border-b-gray-300'>
                 <div className='flex items-center'>
                     <img className='w-8' src={Logo} alt="Logo" />
@@ -38,7 +38,7 @@ export default function Sidebar() {
             </div>
             <div className='p-2'>
                 {menus.map((item) => {
-                    if (item.label !== 'User' && item.label !== 'Settings') {
+                    if (item.label !== 'Users' && item.label !== 'Settings') {
                         return (
                             <SidebarItem key={item.path} icon={item.icon} label={item.label} path={item.path} />
                         );
@@ -55,7 +55,7 @@ export default function Sidebar() {
                     }
                 })}
             </div>
-            <div className='justify-end mt-auto p-2'>
+            <div className='justify-end mt-auto p-6'>
                 <ProfileSidebar user={user!} />
             </div>
         </div >

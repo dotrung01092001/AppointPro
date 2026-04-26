@@ -1,6 +1,6 @@
 import { useLocation, Navigate, Outlet } from "react-router-dom";
 import { ROUTE_PATHS } from "./route-paths";
-import { useAuthStore } from "@/../../src/app/store/auth-store";
+import { useAuthStore } from "@/app/store/auth-store";
 
 
 

@@ -11,7 +11,7 @@ export default function ProfileMenu({ user }: { user: CurrentUser }) {
 
     const navigate = useNavigate();
 
-    const {logout} = useAuthStore();
+    const { logout } = useAuthStore();
 
     const handleDropdown = () => {
         setIsDropdown(!isDropdown);
@@ -27,9 +27,9 @@ export default function ProfileMenu({ user }: { user: CurrentUser }) {
 
 
     return (
-        <div className="flex items-center p-4 border-t border-t-gray-300">
+        <div className="flex items-center">
             <ProfileSidebar user={user} />
-            <button className="cursor-pointer" onClick={handleDropdown}>
+            <button className="cursor-pointer p-2" onClick={handleDropdown}>
                 <ChevronDown className="h-4 w-4 text-gray-500" />
             </button>
             {isDropdown && (

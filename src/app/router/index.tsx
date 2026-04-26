@@ -5,10 +5,7 @@ import ProtectedRoute from "./protected-route";
 import RoleRoute from "./role-route";
 import AppLayout from "../../components/layout/app-layout";
 import LoginPage from "../../pages/auth/login-page";
-
-function DashboardPage() {
-  return <div>Dashboard Page</div>
-}
+import DashboardPage from "../../pages/dashboard/dashboard-page"
 
 function AppointmentsPage() {
   return <div>Appointments Page</div>
