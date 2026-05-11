@@ -8,6 +8,8 @@ import {
 } from "@/components/ui/table"
 
 import { cn } from "@/lib/utils/cn"
+import { Badge } from "@/components/ui/badge"
+
 
 
 const appointments = [
@@ -88,11 +90,11 @@ export function UpcommingAppointments() {
                             <TableCell>{app.staff}</TableCell>
                             <TableCell>{app.dateTime}</TableCell>
                             <TableCell>
-                                <span
-                                    className={cn(`py-1 px-2 border font-semibold rounded-sm`, app.status === 'Confirmed' ? "border-[#10B981] text-[#10B981]" : "border-[#EF4444] text-[#EF4444]")}
+                                <Badge
+                                    className={cn(``, app.status === 'Confirmed' ? "border-[#10B981] text-[#10B981]" : "border-[#EF4444] text-[#EF4444]")}
                                 >
                                     {app.status}
-                                </span>
+                                </Badge>
                             </TableCell>
                         </TableRow>
                     ))}

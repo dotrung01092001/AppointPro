@@ -12,7 +12,7 @@ export default function DatePickerFilter() {
         to: new Date(new Date().getFullYear(), 0, 20)
     })
 
-    const label = range?.from && range?.to ? `${formatDate(range.from, 'MM/dd')} - ${formatDate(range.to, 'MM/dd')}` : "Select date range"
+    const label = range?.from && range?.to ? `${formatDate(range.from, 'MMM dd')} - ${formatDate(range.to, 'MMM dd')}` : "Select date range"
 
     return (
         <div className='realtive '>

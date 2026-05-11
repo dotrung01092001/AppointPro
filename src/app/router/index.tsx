@@ -6,18 +6,15 @@ import RoleRoute from "./role-route";
 import AppLayout from "../../components/layout/app-layout";
 import LoginPage from "../../pages/auth/login-page";
 import DashboardPage from "../../pages/dashboard/dashboard-page"
+import AppointmentsPage from '@/pages/appointments/appointments-page'
+import CalendarPage from '@/pages/calendar/calendar-page'
 
-function AppointmentsPage() {
-  return <div>Appointments Page</div>
-}
 
 function AppointmentDetailPage() {
   return <div>Appointment Detail Page</div>
 }
 
-function CalendarPage() {
-  return <div>Calendar Page</div>
-}
+
 
 function CustomersPage() {
   return <div>Customers Page</div>

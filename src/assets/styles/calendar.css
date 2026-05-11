@@ -1,0 +1,115 @@
+/* Tùy chỉnh khung bao quanh */
+.calendar-container {
+    padding: 20px;
+    background-color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Tùy chỉnh thẻ sự kiện */
+.fc-v-event {
+    border-radius: 8px !important;
+    border: none !important;
+    border-left: 4px solid !important; /* Thanh màu ở bên trái */
+    padding: 8px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.custom-event-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.event-title {
+    font-size: 0.85rem;
+    color: #1a202c;
+}
+
+.event-client {
+    font-size: 0.75rem;
+    color: #718096;
+}
+
+.event-time {
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Xóa bỏ các đường viền mặc định thô cứng */
+.fc th, .fc td {
+    border-color: #edf2f7 !important;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+    border: none !important;
+}
+
+/* Tùy chỉnh Header (Ngày tháng bên trên) */
+.fc-col-header-cell {
+    padding: 15px 0 !important;
+    background: transparent !important;
+    font-weight: 500;
+    color: #718096;
+}
+
+.fc-day-today {
+    background-color: transparent !important; /* Bỏ màu nền vàng của ngày hiện tại */
+}
+
+/* 1. Làm mờ các đường kẻ ô (Grid lines) */
+.fc-theme-standard td, .fc-theme-standard th {
+    border: 1px solid #f0f0f0 !important; /* Đường kẻ rất nhạt */
+}
+
+/* 2. Tùy chỉnh khung sự kiện */
+.fc-v-event {
+    background-color: var(--event-bg, #f0fdfa) !important; /* Màu nền nhẹ */
+    border: none !important;
+    border-left: 5px solid var(--event-border, #38b2ac) !important; /* Thanh màu dày hơn */
+    border-radius: 8px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+    padding: 10px !important;
+    margin: 1px !important;
+}
+
+/* 3. Style cho nội dung bên trong */
+.custom-event-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.event-main-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 2px;
+}
+
+.event-client-name {
+    font-size: 12px;
+    color: #718096;
+    margin-bottom: auto; /* Đẩy giờ xuống dưới cùng */
+}
+
+.event-time-tag {
+    font-size: 11px;
+    font-weight: 600;
+    color: #4a5568;
+    margin-top: 5px;
+}
+
+/* 4. Tùy chỉnh Header (Chữ Sun 10/10...) */
+.fc-col-header-cell-cushion {
+    padding: 15px 0 !important;
+    color: #4a5568 !important;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+
+/* 5. Ẩn nút xanh mờ khi chọn ô */
+.fc-timegrid-slot-lane:active {
+    background-color: transparent !important;
+}

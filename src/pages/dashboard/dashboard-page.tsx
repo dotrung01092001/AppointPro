@@ -1,5 +1,5 @@
 import DatePickerFilter from "../../components/shared/filters/date-range-filter";
-import DropdownMenu from "../../components/ui/dropdown-menu";
+import { DropdownMenu } from "../../components/ui/dropdown-menu";
 import DashboardStats from "@/features/dashboard/components/dashboard-stats";
 import AppointmentOverview from "@/features/dashboard/components/appointments-overview";
 import RevenueSummary from "@/features/dashboard/components/revenue-summary";
