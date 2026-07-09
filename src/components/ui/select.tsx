@@ -8,7 +8,7 @@ type Option = {
     value: string;
 };
 
-export default function Select({ data, icon, title, placeholder }: { data: Option[], icon: LucideIcon, title: string, placeholder: string }) {
+export default function Select({ data, icon, title, placeholder }: { data: Option[], icon?: LucideIcon, title: string, placeholder: string }) {
     const wrapperRef = useRef<HTMLDivElement | null>(null);
 
     const [open, setOpen] = useState(false);
@@ -50,7 +50,7 @@ export default function Select({ data, icon, title, placeholder }: { data: Optio
                 )}
             >
                 <div className="flex items-center gap-3">
-                    <Icon className="h-5 w-5 text-gray-500" />
+                    {Icon && <Icon className="h-5 w-5 text-gray-500" />}
 
                     <span
                         className={cn(

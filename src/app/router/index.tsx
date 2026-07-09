@@ -8,24 +8,21 @@ import LoginPage from "../../pages/auth/login-page";
 import DashboardPage from "../../pages/dashboard/dashboard-page"
 import AppointmentsPage from '@/pages/appointments/appointments-page'
 import CalendarPage from '@/pages/calendar/calendar-page'
+import CustomersPage from '@/pages/customers/customers-page'
+import StaffPage from '@/pages/staff/staff-page'
+import ServicesPage from "@/pages/services/services-page";
+import NotificationsPage from "@/pages/notifications/notifications-page";
+import UsersPage from "@/pages/users/users-page";
+
+
 
 
 function AppointmentDetailPage() {
   return <div>Appointment Detail Page</div>
 }
 
-
-
-function CustomersPage() {
-  return <div>Customers Page</div>
-}
-
 function CustomerDetailPage() {
   return <div>Customer Detail Page</div>
-}
-
-function StaffPage() {
-  return <div>Staff Page</div>
 }
 
 function StaffDetailPage() {
@@ -38,18 +35,6 @@ function MySchedulePage() {
 
 function MyServicesPage() {
   return <div>My Services Page</div>
-}
-
-function ServicesPage() {
-  return <div>Services Page</div>
-}
-
-function UsersPage() {
-  return <div>Users Page</div>
-}
-
-function NotificationsPage() {
-  return <div>Notifications Page</div>
 }
 
 function SettingsPage() {
